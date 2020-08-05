@@ -80,13 +80,34 @@
    \end{itemize}
 \end{frame}
 \begin{frame}
+  \frametitle{Virtual Environments}
+  \begin{itemize}
+  	\item virtualenv (venv) is a tool to create isolated Python environments. Integrated within Python 3
+  	\item venv allows you to essentially create a closed area/environment for you to build your program
+  	\item This is useful because your project is completely isolated from other projects you are working on
+  	\item PyCharm will set this up for you automatically but if you are setting it up via command line then you would need run this command: \texttt{python -m venv env} and then \texttt{source env/bin/activate}
+   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\texttt{requirements.txt}}
+  \begin{itemize}
+  	\item Why is this needed? Sometimes your projects are dependent on libraries other people have made and also require specific versions of those libraries 
+  	\item Inside of \texttt{requirements.txt} you can specify the library and the version (i.e. \texttt{python-dotenv==0.13.0})
+  	\item PyCharm can usually install this automatically if you tell it to
+  	\item To do this via command line we use: \texttt{pip3 install -r requirements.txt}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{Demo}
   \begin{itemize}
-  	\item Time for a demo with PyCharm and Debugging
+  	\item Time for a demo with PyCharm, Debugging and Virtual Environments
   		\begin{itemize}
   			\item We will go over setting up a Hello World project. Trying doing the next 2 on your own.
   			\item Calculate and print factorial of a number
   			\item Print first 20 Fibonacci numbers
+  			\item We will also go over an example of setting up a \texttt{requirements.txt} file and installing it
   		\end{itemize}
   	\item Code examples will be posted to Github
   \end{itemize}

@@ -1,0 +1,116 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=white,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\usetheme{Dresden}
+
+\title[COMPSCI 235 Lab 1 (2020)]
+{Installation/IDE/Debugging}
+  
+\author{Nisarag Bhatt}
+ 
+
+\date[July 2020] 
+{COMPSCI235 Lab 1}
+
+\begin{document}
+\frame{\titlepage}
+\section{Introduction}
+\begin{frame}
+  \frametitle{Hello}
+  My name is Nisarag and I am in 4th Year Software Engineering 
+  \begin{itemize}
+    \item Ask questions on Piazza instead of emailing me so your classmates can see the question and answers 
+    \item These slides will be on Canvas, and any source code demonstrated along with TeX source code for these slides can be found on \href{https://github.com/FocalChord}{my GitHub}
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \begin{itemize}
+  	\item Make a journal and keep note of what you did for each lab in this journal. Think of it as documenting your journey across the exercises across the lab
+  	\item The journal may be digital or physical
+  	\item At the end of the week, you will submit a pdf format of your journal
+    \item We will be checking if your journal entry of that weeks lab is done properly 
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \begin{block}{Question}
+  	Who doesn't have their own device here?
+  \end{block}  
+\end{frame}
+\begin{frame}
+  \frametitle{Learning Outcomes}
+  \begin{itemize}
+  	\item Install Python
+    \item Understand Integrated Development Environments (IDEs)
+    \item Configure PyCharm IDE for software development in Python programming language
+    \item Create a Python based project in PyCharm IDE
+    \item Write and debug a set of basic python programs in PyCharm IDE
+    \item Virtual Environments / \texttt{requirements.txt}
+  \end{itemize}
+\end{frame}
+\section{Python}
+\begin{frame}
+  \frametitle{Installation}
+  \begin{block}{Question}
+  	Who here has installed \texttt{Python 3}?    
+  \end{block}
+  \pause
+  If you haven't, please download it from \href{https://www.python.org/downloads/}{here} 
+\end{frame}
+\section{IDE}
+\begin{frame}
+  \frametitle{PyCharm}
+  \begin{itemize}
+  	\item If you prefer using another IDE, text editor then feel free to use that in the course.
+  	\item Jetbrains is a company which makes many IDE's for various languages. An IDE they have for Python is PyCharm.
+    \item Download the Community Edition of PyCharm from \href{https://www.jetbrains.com/pycharm/}{here}
+    \item If you want, you can also get the professional version by signing up to Jetbrains with your university email!
+    \item Follow installation steps
+   \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Virtual Environments}
+  \begin{itemize}
+  	\item virtualenv (venv) is a tool to create isolated Python environments. Integrated within Python 3
+  	\item venv allows you to essentially create a closed area/environment for you to build your program
+  	\item This is useful because your project is completely isolated from other projects you are working on
+  	\item PyCharm will set this up for you automatically but if you are setting it up via command line then you would need run this command: \texttt{python -m venv env} and then \texttt{source env/bin/activate}
+   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\texttt{requirements.txt}}
+  \begin{itemize}
+  	\item Why is this needed? Sometimes your projects are dependent on libraries other people have made and also require specific versions of those libraries 
+  	\item Inside of \texttt{requirements.txt} you can specify the library and the version (i.e. \texttt{python-dotenv==0.13.0})
+  	\item PyCharm can usually install this automatically if you tell it to
+  	\item To do this via command line we use: \texttt{pip3 install -r requirements.txt}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Demo}
+  \begin{itemize}
+  	\item Time for a demo with PyCharm, Debugging and Virtual Environments
+  		\begin{itemize}
+  			\item We will go over setting up a Hello World project. Trying doing the next 2 on your own.
+  			\item Calculate and print factorial of a number
+  			\item Print first 20 Fibonacci numbers
+  			\item We will also go over an example of setting up a \texttt{requirements.txt} file and installing it
+  		\end{itemize}
+  	\item Code examples will be posted to Github
+  \end{itemize}
+   \end{frame}
+
+\end{document}
